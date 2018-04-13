@@ -51,12 +51,12 @@ function createBasicsDom() {
 
     var troopText = $("<p>", {
         class: "pageText",
-        text: "So you need to destroy more towers than your opponent while defending your towers. But how do you attack their towers and defend yours? Well you have cards that do different things(click the cards button to learn more about cards). The most common type of card is the troop card. The troop card can move and attack. If troop cards loose enough health, they will die and be removed from the game board."
+        text: "So you need to destroy more towers than your opponent while defending your towers. But how do you attack their towers and defend yours? Well, you have cards that do different things. The most common type of card is the troop card. There are also spell cards, and building cards. The troop cards can move and attack. If troop cards loose enough health, they will die and be removed from the game board."
     });
 
     var trophyText = $("<p>", {
         class: "pageText",
-        text: "When you win a battle you get around 30 trophies depending on how many trophies your opponent has. If you lose battles you lose trophies. Once you get enough trophies you can move onto the next arena. Moving to a new arena can unlock more cards for you to use in your deck. There are also graphical changes in the gameboard."
+        text: "When you win a battle you get around 30 trophies depending on how many trophies your opponent has. If you lose battles you lose trophies. Once you get enough trophies you can move onto the next arena. Moving to a new arena can unlock more cards for you to use in your deck. There are also graphical changes in the game board."
     });
 
     var arenaImg = $("<img>", {
@@ -84,6 +84,7 @@ function createBasicsDom() {
 }
 
 
+
 var stratObjArr = [
     {
         title: "Hog Freezer",
@@ -92,13 +93,24 @@ var stratObjArr = [
         author: "Simon"
     },
     {
-        title: "Skeleton Army Gobbo Barrels",
+        title: "Skarmy Gobbo Barrels",
         text: "Save up 6 elixir and wait until the enemy has played enough cards to not have enough elixir to counter your army, then unleash skeleton army down the lane and throw gobbo barrel at the tower. The two cards together will quickly destroy any unguarded tower.",
         img: "skarmy.png",
         author: "Bill"
+    },
+    {
+        title: "Elixir Waster",
+        text: "A good way to waste your opponent's elixir, is to use troop spawning buildings, like goblin huts, furnaces, or barbarian huts. Put them behind your princess towers, one on each side and the opponent will have to put down troops that cost about 5 elixir while you are not wasting any elixir.",
+        img: "elixir2.jpg",
+        author: "Simon"
+    },
+    {
+        title: "Piggy Pushing",
+        text: "A tricky way to speed up your slow troops is by putting faster troops directly behind the slower ones. The fast pig bumps into your slower troops and pushes them along. This helps your troops reach the opponents tower faster than they normally would.",
+        img: "pig.jpg",
+        author: "Simon"
     }
 ];
-
 
 function createAllStrats(arr) {
     for (var i = 0; i < stratObjArr.length; i++) {
