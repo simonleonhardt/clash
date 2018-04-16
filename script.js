@@ -2,16 +2,22 @@ $(document).ready(function () {
     cardBtnClick();
     stratBtnClick();
     basicBtnClick();
-
     createBasicsDom();
+    youtubeRef();
+
 });
+
+function youtubeRef(){
+    $('#youtube').click(function(){
+        window.location.href = 'https://www.youtube.com/watch?v=a15g4wVjzwo&feature=youtu.be';
+    })
+}
 
 function basicBtnClick() {
     $('#basicBtn').click(function () {
         console.log('you clicked me');
         $('#page').empty();
         createBasicsDom();
-
     })
 }
 function cardBtnClick() {
@@ -80,9 +86,7 @@ function createBasicsDom() {
     });
 
     $("#page").append(welcomeImg, welcomeText, introText, boardImg, troopText, trophyText, arenaImg, chestText, chestImg, endText);
-
 }
-
 
 
 var stratObjArr = [
@@ -109,7 +113,14 @@ var stratObjArr = [
         text: "A tricky way to speed up your slow troops is by putting faster troops directly behind the slower ones. The fast pig bumps into your slower troops and pushes them along. This helps your troops reach the opponents tower faster than they normally would.",
         img: "pig.jpg",
         author: "Simon"
+    },
+    {
+        title: "All in Push",
+        text: "Place a heavy tank down in the front like a Golem or Giant, and then place a few Area of Effect damaged troops behind him like a dragon or dark prince, and then place a prince or assassin behind them for large single target damage.",
+        img: "golem.jpg",
+        author: "Simon"
     }
+
 ];
 
 function createAllStrats(arr) {

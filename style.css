@@ -41,6 +41,14 @@ body {
     display: inline;
 }
 
+#youtube {
+    font-family: Roboto, Arial, sans-serif;
+    color: #ffffff;
+    position: relative;
+    left: 5px;
+    bottom: 18px;
+}
+
 .pageText {
     font-size: 24px;
     font-family: 'Anton', sans-serif;
