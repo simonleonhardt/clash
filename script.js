@@ -161,7 +161,7 @@ function createStratDom(obj) {
 // Call api to get card data
 function getCardData(){
     $.ajax({
-        url:"http://www.clashapi.xyz/api/cards",
+        url:"https://royaleapi.github.io/cr-api-data/json/cards.json",
         success: function(result){
             console.log(result);
             createAllCards(result);
@@ -190,16 +190,16 @@ function createCardDom(obj) {
         class: "cardText",
         text: obj.description
     });
-    console.log(obj.idName);
+    console.log(obj.key);
     var cardImg = $("<div>", {
         class: "cardImg",
         css: {
-            "background-image": 'url("http://www.clashapi.xyz/images/cards/' + obj.idName + '.png")'
+            "background-image": 'url("https://cdn.royaleapi.com/static/img/cards-150/' + obj.key + '.png")'
         }
     });
     var elixir = $("<div>", {
         class: "elixirCount",
-        text: obj.elixirCost
+        text: obj.elixir
     });
     $(cardCard).append(titleCard, cardText, cardImg, elixir);
 
